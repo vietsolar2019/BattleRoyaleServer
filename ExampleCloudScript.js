@@ -12,8 +12,9 @@ handlers.helloWorld = function(args, content) {
 var calculator = function(a, b){
     return a + b;
 }
+
 handlers.addition = function(args, content){
-    const a = 1;
-    let b = 2;
+    var a = args.a;
+    let b = args.b;
     return calculator(a , b);
 }
